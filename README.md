@@ -1,6 +1,6 @@
 # WEC OpenFOAM Open Datasets
 <div align="justify">
-Welcome to the landing page for the OpenFOAM Wave Energy Converter Open Datasets!
+Welcome to the landing page for the Wave Energy Converter (WEC) OpenFOAM Open Datasets!
 
 <br /> 
 This repository is a collection of templates, examples, helper scripts, and data-sets compiled with the goal of improving the accessibility of high-fidelity CFD simulation of WECs using OpenFOAM. 
