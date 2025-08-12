@@ -27,7 +27,7 @@ For each case featuring device geometry, two options are provided: a rubber duck
 
 
 ### <tt>template</tt> vs <tt>example</tt>
-In this repository, you will encounter two kinds of directories per case type: template, and example. 
+In this repository, you will encounter two kinds of directories per case type: <tt>template</tt>, and <tt>example</tt>. 
 
 A <tt>template</tt> is a baseline case setup (for each case type) that provides a generic guide for how to set up that kind of case. The interested user can make modifications to a given <tt>template</tt> case to adapt it to their own needs. 
 
@@ -78,9 +78,3 @@ The Reference Model 6 (RM6) is a Backward Bent Duct Buoy (BBDB), a type of oscil
 </p>
 
 <p align='middle'> Figure 3 - RM6 BBDB Device Design and Dimensions</p>
-
-
-
-## References
-
-
