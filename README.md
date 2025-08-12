@@ -20,11 +20,10 @@ As such, the case types provided in this directory are:
 For each case featuring device geometry, two options are provided: a rubber ducky geometry (for a more light-hearted introductory example), or the Reference Model 6 (to see what the set-ups look like for a real WEC device).
 
 <p align="middle">
-  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/tree/main/images/WEC_analysis_workflow_v3.png" height="200"/>
+  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/blob/main/images/WEC_analysis_workflow_v3.png" height="200"/>
 </p>
 
 <p align='middle'> Figure 1 - Steps to the typical WEC analysis workflow </p>
-
 
 
 ### <tt>template</tt> vs <tt>example</tt>
@@ -40,7 +39,7 @@ As such, the README files for the <tt>template</tt> directories will provide mor
 To simplify and centralize the user's interaction with the OpenFOAM dictionary files, a text-based user interface is provided in the form of a text file named <tt>flowParams</tt>. The provided simulation set-ups in this repository have been developed such that most settings a user might want to modify can be adjusted by editing the <tt>flowParams</tt> file. Other more advanced settings (such as solver settings) have been pre-selected for the user. This is done by providing the <tt>flowParams</tt> file as an <tt>include</tt> to the rest of the relevant OpenFOAM dictionary files, so that they read settings from <tt>flowParams</tt>.
 
 <p align="middle">
-  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/tree/main/images/flowParams_usage.png" height="200"/>
+  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/blob/main/images/flowParams_usage.png" height="200"/>
 </p>
 
 <p align='middle'> Figure 2 - Case structure for provided simulation setups, with <tt>flowParams</tt> serving as an interface for the user with the rest of the OpenFOAM dictionary files.</p>
@@ -74,8 +73,8 @@ The Reference Model 6 (RM6) is a Backward Bent Duct Buoy (BBDB), a type of oscil
 &nbsp;
 
 <p align="middle">
-  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/tree/main/images/rm6.png" height="200"/>
-  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/tree/main/images/rm6-dimensions.png" height="200"/>
+  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/blob/main/images/rm6.png" height="200"/>
+  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/blob/main/images/rm6-dimensions.png" height="200"/>
 </p>
 
 <p align='middle'> Figure 3 - RM6 BBDB Device Design and Dimensions</p>
