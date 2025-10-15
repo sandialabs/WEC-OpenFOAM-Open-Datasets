@@ -35,7 +35,7 @@
 	tankWidth	    12;		    // Only use for 3D simulation. 
 	lengthContr	    4;		    // tankLength = lengthContr*waveLength
 
-// Controlled (oscillatory) Motion
+// Prescribed (oscillatory) Motion
     oscilMode       1;          // Supported modes: 0-translation or 1-rotation (around CG).
     motionAmp       (0,0.0,0);  // Scaled object motion. Unit in degrees for rotation.
     motionPeriod    0.0;     // Scaled object motion
