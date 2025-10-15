@@ -1,0 +1,67 @@
+// Generate the result values
+solverInfo1
+{
+    type            solverInfo;
+    libs            (utilityFunctionObjects);
+    fields          (U p);
+}
+
+// Describe the graph
+residualGraph
+{
+    // Mandatory entries
+    type            graphFunctionObject;
+    libs            (utilityFunctionObjects);
+
+    functions
+    {
+        //entry
+        //{
+        //    // Mandatory entries
+        //    object      ;
+        //    entry       ;
+        //
+        //    // Optional entries
+        //    title       ;      // Default: take from dict name
+        //    colour      ; // labels in range 0-255 (255 0 0)
+        //    dashes      ;   // (4 1 1)
+        //}
+        Ux
+        {
+            object      solverInfo1;
+            entry       Ux_initial;
+        }
+        Uy
+        {
+            object      solverInfo1;
+            entry       Uy_initial;
+        }
+        Uz
+        {
+            object      solverInfo1;
+            entry       Uz_initial;
+        }
+        p
+        {
+            object      solverInfo1;
+            entry       p_initial;
+        }
+    }
+
+    // Optional entries
+    //xMin            ;
+    //xMax            ;
+    //yMin            ;
+    //yMax            ;
+    //xlabel          ;  // "Iteration";
+    //ylabel          ;  // "log10(Initial residual)";
+    //width           ;
+    //height          ;
+    //strokeWidth     ;
+    //logScaleX       ;
+    //logScaleY       ;
+    //drawGrid        ;
+
+    // Inherited entries
+    //...
+}
