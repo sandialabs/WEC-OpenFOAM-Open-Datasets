@@ -35,8 +35,11 @@ Each case type has:
 
 User interaction with OpenFOAM dictionaries is centralized in a single configuration file called flowParams. Most adjustable parameters are defined in this file, while advanced solver settings are pre‑configured. All other dictionaries reference flowParams, so their parameter values are read directly from it.
 
-![flowParams usage](images/flowParams_usage.png)
-<p align="center"><em>Figure 2 — Case structure with <code>flowParams</code> included by OpenFOAM dictionaries</em></p>
+<p align="middle">
+  <img src="https://github.com/sandialabs/WEC-OpenFOAM-Open-Datasets/blob/main/images/flowParams_usage.png" height="200"/>
+</p>
+
+<p align='middle'><em>Figure 2 — Case structure with <code>flowParams</code> included by OpenFOAM dictionaries</em></p>
 
 ## Recommended workflow
 
