@@ -7,7 +7,7 @@
 
 ### Mesh files
 
-For each case:
+The grid files (`<constant>/polyMesh`) are not included in these cases. For each case:
 - Use `template_mesh_generation` with the provided `flowParams` and the CAD file in `<case>/constant/polyMesh.orig_gen_grid_files/` to generate the mesh.
 - Some meshes are already provided in `examples_mesh_generation`.
 - After generating the mesh at `<mesh_root>/caseMesh/finalMesh/constant/polyMesh/`, rename it to `polyMesh.orig` and place it in `<case>/constant/`.
@@ -16,10 +16,6 @@ For each case:
 - **Single Processor**: Use the `Allrun.ser` script in each case to run on a single processing unit.
 - **Multiple Processors**: Use the `Allrun` script in each case to run on multiple processing units.
     - For parallel runs, the number and type of domain decompositions can be adjusted in `<system>/decomposeDict`.
-- **Grid Generation**: The grid files (`<constant>/polyMesh`) are not included in these cases.
-    - Use `template_mesh_generation` with the provided `flowParams` and CAD file (place inside
-    `<constant>/polyMesh.orig_gen_grid_files`) to generate the grid for each case.
-    - Alternatively, grids can be generated using the examples provided in `examples_mesh_generation` for each case.
 - **Wave conditions and time control**: All settings can be configured through the `flowParams` file located in the top folder of each case.
 
 ### Post-processing Scripts
