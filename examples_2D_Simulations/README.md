@@ -1,9 +1,16 @@
-## 3D OpenFOAM FSI Overset Example Cases
+## 2D OpenFOAM FSI Overset Example Cases
 
 ### Cases
 - 2D Ducky Drop 
 - 2D Reference Model 6 (RM6) Floating (No Baffle/PTO)
 - 2D Reference Model 6 (RM6) with Mooring (No Baffle/PTO)
+
+### Mesh files
+
+For each case:
+- Use `template_mesh_generation` with the provided `flowParams` and the CAD file in `<case>/constant/polyMesh.orig_gen_grid_files/` to generate the mesh.
+- Some meshes are already provided in `examples_mesh_generation`.
+- After generating the mesh at `<mesh_root>/caseMesh/finalMesh/constant/polyMesh/`, rename it to `polyMesh.orig` and place it in `<case>/constant/`.
 
 ### Setup
 - **Single Processor**: Use the `Allrun.ser` script in each case to run on a single processing unit. 
