@@ -55,8 +55,13 @@ Work through cases that increase in complexity:
 
 3) **Decay testing**  
    - Templates: [`template_free_decay/`](template_free_decay/)
+   - Examples: [`examples_free_decay/`](examples_free_decay/)
+  
+4) **Prescribed oscillation**  
+   - Templates: [`template_prescribed_oscillation/`](template_prescribed_oscillation/)
+   - Examples: [`examples_prescribed_oscillation/`](examples_prescribed_oscillation/)
 
-4) **Waves + device (2D/3D)**  
+5) **Waves + device (2D/3D)**  
    - Template:  [`template_2D3D_Simulation/`](template_2D3D_Simulation/)  
    - Examples:  [`examples_2D_Simulations/`](examples_2D_Simulations/), [`examples_3D_Simulations/`](examples_3D_Simulations/)  
    - Tip: start unmoored without PTO, then add mooring, then PTO
