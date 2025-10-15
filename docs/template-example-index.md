@@ -20,6 +20,10 @@ Start with the template for each case type, then open the matching examples to c
 - **Template:** [template_free_decay](../template_free_decay/)  
   Free-decay tests for heave, pitch, and roll. Used to estimate natural periods and damping.
 
+## Prescribed oscillation (no waves or waves)
+- **Template:** [template_prescribed_oscillation](../template_prescribed_oscillation/)  
+  Prescribed oscillation tests for any degree of freedom. These are used to evaluate hydrodynamic coefficients (e.g., added mass and damping) and to validate responses under controlled oscillations. They can be run with or without incident waves.
+  
 ## Waves + device (2D and 3D)
 - **Template:** [template_2D3D_Simulation](../template_2D3D_Simulation/)  
   Common setup for 2D and 3D cases where waves interact with the body. Requires `constant/polyMesh/` from mesh generation. Optional mooring and PTO.
