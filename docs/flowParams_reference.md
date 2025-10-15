@@ -36,6 +36,15 @@ This section explains the parameters defined in the flowParams file.
 - **`turbModel`**: Turbulence model used when `simType = RAS`.  
   - Options: `kEpsilon`, `kOmegaSST`, `realizableKE`, etc.
 
+## 🔁 Prescribed (Oscillatory) Motion
+Used for prescribed motion tests and device characterization.
+
+- **`oscilMode`** — motion mode.  
+  `0` → translation • `1` → rotation (about CG)
+- **`motionAmp`** — motion amplitude vector `(x, y, z)`.  
+  Units: **degrees** when `oscilMode = 1` (rotation); **meters** when `oscilMode = 0` (translation).  
+- **`motionPeriod`** — period of the imposed motion (s).  
+
 ## 📐 Wave Tank Dimensions
 - **`tankLength`**: Tank length in meters.  
   - If set to `0`, it is parameterized as `lengthContr * waveLength`.
