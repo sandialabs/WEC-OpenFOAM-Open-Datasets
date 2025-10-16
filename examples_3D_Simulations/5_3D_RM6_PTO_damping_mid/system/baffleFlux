@@ -1,0 +1,73 @@
+// reference:
+// https://www.openfoam.com/documentation/guides/latest/doc/guide-fos-field-surfaceFieldValue.html
+// https://www.openfoam.com/news/main-news/openfoam-v2112/post-processing
+
+    volFlow
+    {
+         type            surfaceFieldValue;
+         libs            ("libfieldFunctionObjects.so");
+         enabled         yes;
+         writeControl    timeStep;
+         log             yes;
+         writeFields     yes;
+         regionType      faceZone;
+         name            porousBaffle;
+         operation       sum;
+         surfaceFormat none;
+         fields
+         (
+             phi
+         );
+    }
+    massFlow
+    {
+         type            surfaceFieldValue;
+         libs            ("libfieldFunctionObjects.so");
+         enabled         yes;
+         writeControl    timeStep;
+         log             yes;
+         writeFields     yes;
+         regionType      faceZone;
+         name            porousBaffle;
+         operation       sum;
+         surfaceFormat none;
+         fields
+         (
+             rhoPhi
+         );
+    }
+    p0
+    {
+         type            surfaceFieldValue;
+         libs            ("libfieldFunctionObjects.so");
+         enabled         yes;
+         writeControl    timeStep;
+         log             yes;
+         writeFields     yes;
+         regionType      patch;
+         name            baffle_in;
+         operation       areaAverage;
+         surfaceFormat none;
+         fields
+         (
+             p U
+         );
+    }
+    p1
+    {
+         type            surfaceFieldValue;
+         libs            ("libfieldFunctionObjects.so");
+         enabled         yes;
+         writeControl    timeStep;
+         log             yes;
+         writeFields     yes;
+         regionType      patch;
+         name            baffle_out;
+         operation       areaAverage;
+         surfaceFormat none;
+         fields
+         (
+             p U
+         );
+    }
+

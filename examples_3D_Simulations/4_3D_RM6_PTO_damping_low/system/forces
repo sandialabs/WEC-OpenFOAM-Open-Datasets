@@ -1,0 +1,41 @@
+    // record forces/moments on body
+    forcesOE
+    {
+        type forces;
+        libs            (forces);
+        writeControl    adjustable;
+        writeInterval   $writeElev;
+
+        patches
+        (
+            "object"
+        );
+
+        log true;
+        CofR $objCGV_gl; // center of mass at time 0
+    }
+
+    forcesTurb_in
+    {
+        type forces;
+        libs            (forces);
+        writeControl timeStep;
+
+        patches         ( "baffle_in" );
+    
+        log true;
+        CofR ( #eval { -4.95456092*$objScale+$tankShiftX } 0 #eval { 8.03440655*$objScale+$tankShiftX } ); // center of mass at time 0
+    }
+
+    forcesTurb_out
+    {
+        type forces;
+        libs            (forces);
+        writeControl timeStep;
+
+        patches         ( baffle_out );
+    
+        log true;
+        CofR ( #eval { -4.95456092*$objScale+$tankShiftX } 0 #eval { 8.03440655*$objScale+$tankShiftX } ); // center of mass at time 0    
+    }
+
