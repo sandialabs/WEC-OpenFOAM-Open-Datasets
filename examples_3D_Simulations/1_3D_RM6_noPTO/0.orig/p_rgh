@@ -14,6 +14,8 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
+#include "../system/caseSetup_overset";
+
 dimensions      [1 -1 -2 0 0 0 0];
 
 internalField   uniform 0;
@@ -46,9 +48,9 @@ boundaryField
         type            porousBafflePressure;
         patchType       cyclic;
         // In OF        dp = -(D*mu*u+1/2*I*rho*u*u)*L
-        D               0.0;
-        I               0.0;
-        length          0.1;
+        D               $DarcyCoeff;
+        I               $inertiaCoeff;
+        length          $baffle_dL;
         uniformJump     true;
         jump            uniform 0;
         value           uniform 0;
@@ -59,9 +61,9 @@ boundaryField
         type            porousBafflePressure;
         patchType       cyclic;
         // In OF        dp = -(D*mu*u+1/2*I*rho*u*u)*L
-        D               0.0;
-        I               0.0;
-        length          0.1;
+        D               $DarcyCoeff;
+        I               $inertiaCoeff;
+        length          $baffle_dL;
         uniformJump     true;
         jump            uniform 0;
         value           uniform 0;

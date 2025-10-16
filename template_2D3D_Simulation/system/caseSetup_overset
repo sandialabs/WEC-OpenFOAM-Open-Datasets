@@ -52,6 +52,13 @@
     My              #eval { $rYGyr*$rYGyr*$mass };
     Mz              #eval { $rZGyr*$rZGyr*$mass };
 
+    // PTO settings
+    #if #eval { $usePTO == 0 }
+        DarcyCoeff      0;
+        inertiaCoeff    0;
+        baffle_dL       0;
+    #endif
+
 // Time control
 
     #if #eval { $endTime == 0 }

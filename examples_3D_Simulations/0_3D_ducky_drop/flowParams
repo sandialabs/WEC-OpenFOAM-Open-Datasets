@@ -54,9 +54,8 @@
 |             Grid and Time Step Control                       |
 \*------------------------------------------------------------*/
 
-// Model definition - CAD model should be placed at the top directory
+// Model definition
 
-    objName         ducky.stl;                // CAD model placed in the top directory
     mass            53;  
     objCG           (0.0,0.0,0.0);  
     gyRad           (0.2327,0.2606,0.2952); 
@@ -66,16 +65,6 @@
     objScale        1.0;
     rotate          ((0 1 0) 0);        // Axis and rotation angle in degree(s).
     hinge           (0.0,0.0,0.0);      // Scaled value. Rotational point
-
-// Grid Control (For meshing only; not required for running the case)
-
-	xContr          1;                  // Cells per wave length. Cell size = min(dx,dz)
-	zContr          8;		            // Cells per wave height
-	hContr		    1.0;                // Height of refinement zone over waveHeight
-    nRefineZones    4;                  // Refinement level from coarsest to finest (WEC area)
-    zoneHeightRatio 0.3;                // Growth ratio of zone heights
-    zoneWidthRatio  0.3;                // Growth ratio of zone widths
-    nLayerOverlap   10;                 // Number of cell layers extending from the WEC wall
 
 // Time Step Control
 
